@@ -1,0 +1,213 @@
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(109, 18, 214);
+    box-shadow: 8px 8px 20px rgb(203, 161, 250), -8px -8px 20px #ffffff;
+    position: fixed;
+}
+.navbar li{
+    list-style: none;
+    display: inline;
+    padding: 30px 55px 30px 55px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+.navbar li:hover{
+     color: rgb(239, 196, 248);
+     cursor: pointer;
+     transition: 1.9s;
+}
+.navbar ul{
+    padding: 25px 29px;
+    margin-left: 180px;
+}
+
+/** Dropdown content styling */
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+    left: 80%;
+    top: -60px;
+} 
+.dropdown span{
+     color: rgb(223, 220, 228);
+     font-family: sans-serif;
+     font-size: 16px;
+}
+.dropdown-content{
+    width: 97%;
+    background-color: white;
+    height: 150px;
+    box-shadow: 0px 8px 4px rgb(224, 221, 221);
+    position: absolute;
+    top: 20px;
+    display: none;
+    z-index: 1;
+}
+.dropdown-content li{
+    color: rgb(83, 31, 141);
+    font-size: 13px;
+    padding: 15px 30px 15px 30px;
+    line-height: 30px;
+}
+.dropdown-content ul{
+    margin-left: -2px;
+    padding: 5px 15px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.nigeria img{
+    width: 17%;
+}
+.nigeria{
+    position: absolute;
+    top: 17%;
+    left: 20px;
+}
+.ghana img{
+    width: 17%;
+}
+.ghana{
+    position: absolute;
+    top: 38%;
+    left: 20px;
+}
+.kenya img{
+    width: 17%;
+}
+.kenya{
+    position: absolute;
+    top: 58%;
+    left: 20px;
+}
+.canada img{
+    width: 17%;
+}
+.canada{
+    position: absolute;
+    top: 78%;
+    left: 20px;
+}
+/** Body section style starts here */
+#body{
+    display: flex;
+    width: 100%;
+}
+.phone img{
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: -8px -8px 20px #ffffff, 8px 8px 20px rgb(183, 154, 216);
+}
+.phone{
+    margin-top: 180px;
+    margin-left: 90px;
+}
+/** Form styling begins here**/
+.form{
+     width: 36%;
+     height: 440px;
+     background-color: white;
+     top: 190px;
+     position: absolute;
+     left: 50%;
+     box-shadow: -8px -8px 20px rgb(236, 234, 238), 8px 8px 20px rgb(207, 205, 209);
+     border-radius: 10px;
+     z-index: -1;
+}
+.sign{
+    margin-left: 30%;
+    margin-top: 50px;
+}
+.sign li{
+    list-style: none;
+    display: inline;
+    padding: 0px 20px 0px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(183, 154, 216);
+    border-bottom: 3px solid rgb(83, 31, 141);
+    width: 10px;
+}
+.sign .signu{
+    border-bottom: none;
+    color: rgb(247, 139, 157);
+}
+input{
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 50px;
+    height: 40px;
+    margin-left: 40px;
+    border: none;
+    box-shadow: inset 8px 8px 8px rgb(241, 239, 243), inset -8px -8px 8px #f5f4f4;
+    border-radius: 3px;
+}
+::placeholder{
+    font-family: cursive;
+    padding: 0px 30px;
+    font-size: 16px;
+    color: rgb(77, 75, 75);
+}
+button{
+    background-color: rgb(83, 31, 141);
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 8px 8px 20px rgb(207, 205, 209), -8px -8px 20px #ffffff;
+    color: rgb(207, 205, 209);
+    font-family: sans-serif;
+    font-size: 17px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(109, 18, 214);
+    color: rgb(109, 18, 214);
+    font-weight: bolder;
+    transition: 0.9s;
+}
+p{
+    margin-left: 50%;
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(139, 127, 127);
+}
+.fontawesome{
+    display: flex;
+}
+.fa-facebook{
+    margin-left: 30%;
+    font-size: 20px;
+    color: blue;
+}
+.google{
+    width: 8%;
+    margin-left: 13%;
+}
+.fa-twitter{
+    margin-left: 12%;
+    font-size: 20px;
+    color: rgb(44, 151, 187);
+}
+/* ON screens that are 600px wide or less, make the navbar stack on top of each other instead of next to each
+other */
+@media screen and (max-width: 600px) {
+    .navbar li{
+        float: none;
+        width: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .phone{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+}
